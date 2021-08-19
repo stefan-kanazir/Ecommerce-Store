@@ -16,25 +16,24 @@ class ProductProvider extends Component {
     }
 
     setProducts = () => {
-        let tempProducts = [];
+        let products = [];
         storeProducts.forEach(item => {
             const singleItem = {...item};
-            tempProducts = [...tempProducts, singleItem];
-        })
+            products = [...products,singleItem];
+        });
+
         this.setState(() => {
-            return {tempProducts}
-        })
+            return {products}
+        });
     }
 
     handleDetail = () => {
         console.log('hello from detail');
-    };
+    }
 
-    addToCart = () => {
-        console.log('hello from add to cart');
-    };
-
-    
+    addToCart = (id) => {
+        console.log(`hello from add to cart. ID is ${id}`);
+    }
 
     render() {
         return (
