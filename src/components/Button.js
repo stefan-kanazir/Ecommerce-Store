@@ -19,4 +19,11 @@ export const ButtonContainer = styled.button`
     &:focus {
         outline: none;
     }
+    a {
+        color: var(--mainYellow);
+        text-decoration: none;
+        &:hover {
+            color: var(--mainWhite);
+        }
+    }
 `;
